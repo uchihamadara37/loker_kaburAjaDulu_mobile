@@ -67,8 +67,7 @@ class _FullMapBookedKosScreenState extends State<FullMapBookedKosScreen> {
   LatLng? _currentMapCenter; // Untuk menyimpan pusat peta saat ini
   static const double GYRO_SENSITIVITY =
       5; // Sensitivitas pergerakan peta berdasarkan gyro
-  static const double GYRO_THRESHOLD =
-      0.3; // Ambang batas gyro untuk mulai bergerak (rad/s)
+  // static const double GYRO_THRESHOLD = 0.3;
 
   // --- PENAMBAHAN: Listener untuk pergerakan kamera peta ---
   void _onCameraMove(CameraPosition position) {

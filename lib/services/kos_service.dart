@@ -3,10 +3,10 @@ import 'dart:io'; // Untuk File jika nanti ada upload
 import 'package:http/http.dart' as http;
 import 'package:loker_kabur_aja_dulu/core/constants/api_constants.dart';
 import 'package:loker_kabur_aja_dulu/data/models/kos_model.dart';
-import 'package:loker_kabur_aja_dulu/services/token_service.dart'; // Untuk token jika diperlukan
+// import 'package:loker_kabur_aja_dulu/services/token_service.dart'; // Untuk token jika diperlukan
 
 class KosService {
-  final TokenService _tokenService = TokenService();
+  // final TokenService _tokenService = TokenService();
 
   Future<List<KosModel>> getAllKos() async {
     final url = Uri.parse(ApiConstants.baseUrl + ApiConstants.kosEndpoint);

@@ -10,7 +10,7 @@ import 'package:loker_kabur_aja_dulu/presentation/providers/auth_provider.dart';
 import 'package:loker_kabur_aja_dulu/presentation/providers/kos_provider.dart';
 import 'package:loker_kabur_aja_dulu/presentation/screens/kos/form_kos_screen.dart';
 import 'package:loker_kabur_aja_dulu/services/currency_service.dart';
-import 'package:loker_kabur_aja_dulu/services/notification_service.dart';
+// import 'package:loker_kabur_aja_dulu/services/notification_service.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:geolocator/geolocator.dart';

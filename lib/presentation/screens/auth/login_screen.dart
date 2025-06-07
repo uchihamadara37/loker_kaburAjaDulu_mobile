@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loker_kabur_aja_dulu/core/utils/bcrypt_helper.dart';
+// import 'package:loker_kabur_aja_dulu/core/utils/bcrypt_helper.dart';
 import 'package:loker_kabur_aja_dulu/core/utils/videnere_chipper.dart';
 import 'package:loker_kabur_aja_dulu/presentation/providers/auth_provider.dart';
 import 'package:loker_kabur_aja_dulu/presentation/screens/auth/register_screen.dart';
@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final authProvider = Provider.of<AuthProvider>(context);
-    final mediaQuery = MediaQuery.of(context);
+    // final mediaQuery = MediaQuery.of(context);
 
     return Scaffold(
       body: Center(

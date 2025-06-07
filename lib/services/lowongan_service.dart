@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:loker_kabur_aja_dulu/core/constants/api_constants.dart';
 import 'package:loker_kabur_aja_dulu/data/models/lowongan_model.dart';
-import 'package:loker_kabur_aja_dulu/services/token_service.dart'; // Untuk mengambil token jika diperlukan
+// import 'package:loker_kabur_aja_dulu/services/token_service.dart'; // Untuk mengambil token jika diperlukan
 
 class LowonganService {
-  final TokenService _tokenService = TokenService();
+  // final TokenService _tokenService = TokenService();
 
   Future<List<LowonganModel>> getAllLowongan() async {
     final url = Uri.parse(ApiConstants.baseUrl + ApiConstants.lowonganEndpoint);

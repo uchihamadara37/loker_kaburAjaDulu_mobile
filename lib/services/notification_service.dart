@@ -42,7 +42,7 @@ class NotificationService {
       );
     }
 
-    if (timeZoneName != null && timeZoneName.isNotEmpty) {
+    if (timeZoneName.isNotEmpty) {
       // Tambah pengecekan isNotEmpty
       try {
         tz.setLocalLocation(tz.getLocation(timeZoneName));
@@ -87,18 +87,10 @@ class NotificationService {
 
     debugPrint("NotificationService: Starting initialization...");
     await _configureLocalTimeZone();
-    if (tz.local == null) {
-      // Ini seharusnya tidak terjadi jika _configureLocalTimeZone berhasil
-      debugPrint(
-        "NotificationService: CRITICAL - tz.local is STILL NULL after _configureLocalTimeZone. This will cause errors.",
-      );
-      // Anda bisa throw error di sini atau mencoba fallback lagi jika sangat penting
-    } else {
-      debugPrint(
-        "NotificationService: Local timezone configuration step finished. Current tz.local: ${tz.local.name}",
-      );
-    }
-
+    debugPrint(
+      "NotificationService: Local timezone configuration step finished. Current tz.local: ${tz.local.name}",
+    );
+  
     const AndroidInitializationSettings initializationSettingsAndroid =
         AndroidInitializationSettings(
           '@mipmap/ic_launcher',

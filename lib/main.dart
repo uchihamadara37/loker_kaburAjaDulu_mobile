@@ -6,13 +6,12 @@ import 'package:loker_kabur_aja_dulu/presentation/providers/kos_provider.dart';
 import 'package:loker_kabur_aja_dulu/presentation/providers/lowongan_provider.dart';
 import 'package:loker_kabur_aja_dulu/presentation/screens/auth/login_screen.dart';
 import 'package:loker_kabur_aja_dulu/presentation/screens/home_screen.dart'; // Akan kita buat nanti
-import 'package:loker_kabur_aja_dulu/services/notif_service.dart';
 import 'package:loker_kabur_aja_dulu/services/notification_service.dart';
 // import 'package:loker_kabur_aja_dulu/services/notification_service.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:timezone/standalone.dart';
+// import 'package:timezone/standalone.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
